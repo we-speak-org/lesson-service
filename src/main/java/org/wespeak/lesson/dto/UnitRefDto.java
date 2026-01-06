@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UnitRefDto {
-    private String id;
-    private String title;
+  private String id;
+  private String title;
 }

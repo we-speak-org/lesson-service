@@ -11,13 +11,13 @@ import org.wespeak.lesson.entity.Lesson;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LessonSummaryDto {
-    private String id;
-    private String title;
-    private Lesson.LessonType type;
-    private Integer order;
-    private Integer estimatedMinutes;
-    private Integer xpReward;
-    private Boolean isUnlocked;
-    private Boolean isCompleted;
-    private Integer bestScore;
+  private String id;
+  private String title;
+  private Lesson.LessonType type;
+  private Integer order;
+  private Integer estimatedMinutes;
+  private Integer xpReward;
+  private Boolean isUnlocked;
+  private Boolean isCompleted;
+  private Integer bestScore;
 }

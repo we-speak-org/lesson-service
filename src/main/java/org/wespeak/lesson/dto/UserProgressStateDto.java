@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserProgressStateDto {
-    private Boolean isCompleted;
-    private Integer bestScore;
-    private Integer attempts;
+  private Boolean isCompleted;
+  private Integer bestScore;
+  private Integer attempts;
 }

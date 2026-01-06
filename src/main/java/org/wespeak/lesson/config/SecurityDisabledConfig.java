@@ -8,18 +8,17 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
- * Security configuration when security is disabled (dev mode).
- * All endpoints are public when app.security.enabled=false
+ * Security configuration when security is disabled (dev mode). All endpoints are public when
+ * app.security.enabled=false
  */
 @Configuration
 @EnableWebSecurity
 @ConditionalOnProperty(name = "app.security.enabled", havingValue = "false")
 public class SecurityDisabledConfig {
 
-    @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.csrf(csrf -> csrf.disable())
-            .authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
-        return http.build();
-    }
+  @Bean
+  public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    http.csrf(csrf -> csrf.disable()).authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
+    return http.build();
+  }
 }

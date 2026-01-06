@@ -10,14 +10,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ValidationResult {
-    private boolean correct;
-    private String feedback;
+  private boolean correct;
+  private String feedback;
 
-    public static ValidationResult correct(String feedback) {
-        return ValidationResult.builder().correct(true).feedback(feedback).build();
-    }
+  public static ValidationResult correct(String feedback) {
+    return ValidationResult.builder().correct(true).feedback(feedback).build();
+  }
 
-    public static ValidationResult incorrect(String feedback) {
-        return ValidationResult.builder().correct(false).feedback(feedback).build();
-    }
+  public static ValidationResult incorrect(String feedback) {
+    return ValidationResult.builder().correct(false).feedback(feedback).build();
+  }
 }

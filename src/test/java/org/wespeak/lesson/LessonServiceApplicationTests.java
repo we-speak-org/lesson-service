@@ -8,8 +8,8 @@ import org.springframework.test.context.ActiveProfiles;
 @ActiveProfiles("test")
 class LessonServiceApplicationTests {
 
-    @Test
-    void contextLoads() {
-        // Test that the application context loads
-    }
+  @Test
+  void contextLoads() {
+    // Test that the application context loads
+  }
 }

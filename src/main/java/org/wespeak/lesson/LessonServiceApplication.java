@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.config.EnableMongoAuditing;
 @EnableMongoAuditing
 public class LessonServiceApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(LessonServiceApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(LessonServiceApplication.class, args);
+  }
 }

@@ -8,29 +8,27 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * Request body to complete a lesson.
- */
+/** Request body to complete a lesson. */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class CompleteLessonRequest {
-    
-    @NotNull
-    @Min(0)
-    @Max(100)
-    private Integer score;
-    
-    @NotNull
-    @Min(0)
-    private Integer correctAnswers;
-    
-    @NotNull
-    @Min(0)
-    private Integer totalExercises;
-    
-    @NotNull
-    @Min(0)
-    private Integer timeSpentSeconds;
+
+  @NotNull
+  @Min(0)
+  @Max(100)
+  private Integer score;
+
+  @NotNull
+  @Min(0)
+  private Integer correctAnswers;
+
+  @NotNull
+  @Min(0)
+  private Integer totalExercises;
+
+  @NotNull
+  @Min(0)
+  private Integer timeSpentSeconds;
 }

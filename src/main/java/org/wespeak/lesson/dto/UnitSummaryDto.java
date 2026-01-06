@@ -10,9 +10,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UnitSummaryDto {
-    private String id;
-    private String title;
-    private Integer order;
-    private Integer totalLessons;
-    private Boolean isUnlocked;
+  private String id;
+  private String title;
+  private Integer order;
+  private Integer totalLessons;
+  private Boolean isUnlocked;
 }
